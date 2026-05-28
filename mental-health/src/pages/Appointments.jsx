@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import { moodApi } from '../lib/api'
 
 const psychiatrists = [
-  { id: 1, name: 'Dr. Sarah Johnson', specialty: 'Anxiety & Depression', rating: 4.8, experience: '8 years', bookingUrl: 'https://www.zocdoc.com/telehealth' },
-  { id: 2, name: 'Dr. Michael Chen', specialty: 'Trauma & PTSD', rating: 4.9, experience: '12 years', bookingUrl: 'https://www.zocdoc.com/telehealth' },
-  { id: 3, name: 'Dr. Emily Rodriguez', specialty: 'Bipolar Disorder', rating: 4.7, experience: '6 years', bookingUrl: 'https://www.zocdoc.com/telehealth' },
-  { id: 4, name: 'Dr. James Wilson', specialty: 'Addiction & Recovery', rating: 4.6, experience: '10 years', bookingUrl: 'https://www.zocdoc.com/telehealth' },
-  { id: 5, name: 'Dr. Lisa Thompson', specialty: 'Child & Adolescent', rating: 4.9, experience: '15 years', bookingUrl: 'https://www.zocdoc.com/telehealth' }
+  { id: 1, name: 'Dr. Rajesh Kumar', specialty: 'Anxiety & Mood Disorders', rating: 4.9, experience: '14 years', bookingUrl: 'https://www.practo.com/chennai/psychiatrist' },
+  { id: 2, name: 'Dr. Priya Selvaraj', specialty: 'Child & Adolescent Therapy', rating: 4.8, experience: '9 years', bookingUrl: 'https://www.practo.com/chennai/psychiatrist' },
+  { id: 3, name: 'Dr. Ananth Krishnan', specialty: 'Trauma & PTSD Specialist', rating: 4.9, experience: '12 years', bookingUrl: 'https://www.practo.com/chennai/psychiatrist' },
+  { id: 4, name: 'Dr. Shalini Hegde', specialty: 'CBT & Stress Management', rating: 4.7, experience: '8 years', bookingUrl: 'https://www.lybrate.com/chennai/psychiatrist' },
+  { id: 5, name: 'Dr. Suresh Kumar', specialty: 'Addiction & Recovery', rating: 4.6, experience: '11 years', bookingUrl: 'https://www.lybrate.com/chennai/psychiatrist' }
 ]
 
 const timeSlots = [
@@ -103,39 +103,39 @@ export default function Appointments() {
 
       {/* Real Provider Options (External) */}
       <div className="card p-6">
-        <h3 className="text-xl font-semibold mb-4">Find Licensed Psychiatrists (Online)</h3>
-        <p className="text-gray-600 mb-4">Book with real providers on trusted platforms. These links open official websites.</p>
+        <h3 className="text-xl font-semibold mb-4">Find Licensed Psychiatrists (India)</h3>
+        <p className="text-gray-600 mb-4">Book with licensed psychiatrists and therapists on trusted Indian platforms. These links open official websites.</p>
         <div className="grid md:grid-cols-2 gap-4">
-          <a className="p-4 border-2 rounded-xl hover:shadow-md transition flex items-start gap-3 cursor-pointer" href="https://www.zocdoc.com/psychiatrists" onClick={(e)=>{e.preventDefault(); setProviderUrl('https://www.zocdoc.com/psychiatrists'); setShowProvider(true);}}>
+          <a className="p-4 border-2 rounded-xl hover:shadow-md transition flex items-start gap-3 cursor-pointer" href="https://www.practo.com/search/psychiatrist" onClick={(e)=>{e.preventDefault(); setProviderUrl('https://www.practo.com/search/psychiatrist'); setShowProvider(true);}}>
             <span className="text-2xl">🌐</span>
             <div>
-              <div className="font-semibold text-gray-800">Zocdoc – Psychiatrists</div>
-              <div className="text-sm text-gray-600">Search and book online sessions with psychiatrists near you</div>
+              <div className="font-semibold text-gray-800">Practo – Psychiatrists</div>
+              <div className="text-sm text-gray-600">Search and book online/offline sessions with psychiatrists</div>
             </div>
           </a>
-          <a className="p-4 border-2 rounded-xl hover:shadow-md transition flex items-start gap-3 cursor-pointer" href="https://www.teladoc.com/what-we-treat/mental-health/" onClick={(e)=>{e.preventDefault(); setProviderUrl('https://www.teladoc.com/what-we-treat/mental-health/'); setShowProvider(true);}}>
+          <a className="p-4 border-2 rounded-xl hover:shadow-md transition flex items-start gap-3 cursor-pointer" href="https://www.healthdunia.com/psychiatrist" onClick={(e)=>{e.preventDefault(); setProviderUrl('https://www.healthdunia.com/psychiatrist'); setShowProvider(true);}}>
             <span className="text-2xl">📱</span>
             <div>
-              <div className="font-semibold text-gray-800">Teladoc – Mental Health</div>
-              <div className="text-sm text-gray-600">Virtual psychiatry and therapy sessions</div>
+              <div className="font-semibold text-gray-800">Healthdunia – Mental Health</div>
+              <div className="text-sm text-gray-600">Virtual consultations with psychiatrists and therapists</div>
             </div>
           </a>
-          <a className="p-4 border-2 rounded-xl hover:shadow-md transition flex items-start gap-3 cursor-pointer" href="https://www.amwell.com/psychiatry/" onClick={(e)=>{e.preventDefault(); setProviderUrl('https://www.amwell.com/psychiatry/'); setShowProvider(true);}}>
+          <a className="p-4 border-2 rounded-xl hover:shadow-md transition flex items-start gap-3 cursor-pointer" href="https://www.1mg.com/health-online-doctor/psychiatrist-online-consultations" onClick={(e)=>{e.preventDefault(); setProviderUrl('https://www.1mg.com/health-online-doctor/psychiatrist-online-consultations'); setShowProvider(true);}}>
             <span className="text-2xl">💻</span>
             <div>
-              <div className="font-semibold text-gray-800">Amwell – Psychiatry</div>
-              <div className="text-sm text-gray-600">Psychiatry appointments online</div>
+              <div className="font-semibold text-gray-800">1mg – Online Doctor</div>
+              <div className="text-sm text-gray-600">Online consultations with verified psychiatrists</div>
             </div>
           </a>
-          <a className="p-4 border-2 rounded-xl hover:shadow-md transition flex items-start gap-3 cursor-pointer" href="https://www.mdlive.com/behavioral-health/" onClick={(e)=>{e.preventDefault(); setProviderUrl('https://www.mdlive.com/behavioral-health/'); setShowProvider(true);}}>
+          <a className="p-4 border-2 rounded-xl hover:shadow-md transition flex items-start gap-3 cursor-pointer" href="https://www.lybrate.com/search/psychiatrist" onClick={(e)=>{e.preventDefault(); setProviderUrl('https://www.lybrate.com/search/psychiatrist'); setShowProvider(true);}}>
             <span className="text-2xl">🩺</span>
             <div>
-              <div className="font-semibold text-gray-800">MDLIVE – Behavioral Health</div>
-              <div className="text-sm text-gray-600">Psychiatrists and therapists via video</div>
+              <div className="font-semibold text-gray-800">Lybrate – Psychiatry</div>
+              <div className="text-sm text-gray-600">Book appointments with psychiatrists and therapists</div>
             </div>
           </a>
         </div>
-        <p className="text-xs text-gray-500 mt-3">Note: Availability depends on your region and insurance. MindEase is not affiliated with these providers.</p>
+        <p className="text-xs text-gray-500 mt-3">Note: Availability depends on your location and insurance. MindEase is not affiliated with these providers.</p>
       </div>
 
       {showProvider && (
@@ -176,9 +176,16 @@ export default function Appointments() {
       </div>
 
       {showBooking && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fadeIn">
-          <div className="bg-white rounded-2xl p-8 w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl transform animate-slideUp">
-            <div className="flex justify-between items-center mb-6">
+        <div 
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4 md:p-6 animate-fadeIn"
+          onClick={() => setShowBooking(false)}
+        >
+          <div 
+            className="bg-white rounded-2xl w-full max-w-2xl max-h-[85vh] md:max-h-[90vh] overflow-hidden shadow-2xl flex flex-col transform animate-slideUp"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="flex justify-between items-center p-6 border-b border-gray-100 flex-shrink-0">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center">
                   <span className="text-white text-lg">📅</span>
@@ -195,147 +202,150 @@ export default function Appointments() {
               </button>
             </div>
 
-            {bookingStep === 1 && (
-              <div className="space-y-6">
-                <div className="text-center">
-                  <h4 className="text-2xl font-bold text-gray-800 mb-2">Step 1: Choose Your Doctor</h4>
-                  <p className="text-gray-600">Select from our team of experienced mental health professionals</p>
-                </div>
-                <div className="grid gap-4">
-                  {psychiatrists.map(psych => (
-                    <div
-                      key={psych.id}
-                      className={`p-6 border-2 rounded-2xl cursor-pointer transition-all duration-300 transform hover:scale-105 ${
-                        selectedPsychiatrist?.id === psych.id
-                          ? 'border-emerald-500 bg-gradient-to-r from-emerald-50 to-teal-50 shadow-lg'
-                          : 'border-gray-200 hover:border-emerald-300 hover:shadow-md bg-white'
-                      }`}
-                      onClick={() => setSelectedPsychiatrist(psych)}
-                    >
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <div className="flex items-center space-x-3 mb-2">
-                            <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center">
-                              <span className="text-white font-bold text-lg">👩‍⚕️</span>
-                            </div>
-                            <div>
-                              <h5 className="font-bold text-lg text-gray-800">{psych.name}</h5>
-                              <p className="text-emerald-600 font-medium">{psych.specialty}</p>
-                            </div>
-                          </div>
-                          <p className="text-sm text-gray-600 ml-12">{psych.experience} of experience</p>
-                        </div>
-                        <div className="text-right">
-                          <div className="flex items-center justify-center space-x-1 mb-2">
-                            <span className="text-yellow-500 text-xl">★</span>
-                            <span className="font-bold text-lg">{psych.rating}</span>
-                          </div>
-                          <div className="text-xs text-gray-500">Rating</div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <button
-                  onClick={() => setBookingStep(2)}
-                  disabled={!selectedPsychiatrist}
-                  className="w-full px-6 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:transform-none disabled:hover:shadow-lg"
-                >
-                  Next: Select Date & Time →
-                </button>
-              </div>
-            )}
-
-            {bookingStep === 2 && (
-              <div className="space-y-6">
-                <div className="text-center">
-                  <h4 className="text-2xl font-bold text-gray-800 mb-2">Step 2: Select Date & Time</h4>
-                  <p className="text-gray-600">Choose your preferred appointment slot</p>
-                </div>
-                <div>
-                  <label className="block text-lg font-semibold text-gray-700 mb-3">🖥️ Session Mode:</label>
-                  <div className="flex gap-3">
-                    <button
-                      type="button"
-                      onClick={() => setSessionMode('online')}
-                      className={`px-4 py-2 rounded-xl border-2 ${sessionMode==='online' ? 'border-emerald-500 bg-emerald-50 text-emerald-700' : 'border-gray-200'}`}
-                    >Online (Video)</button>
-                    <button
-                      type="button"
-                      onClick={() => setSessionMode('in_person')}
-                      className={`px-4 py-2 rounded-xl border-2 ${sessionMode==='in_person' ? 'border-emerald-500 bg-emerald-50 text-emerald-700' : 'border-gray-200'}`}
-                    >In-person</button>
+            {/* Modal Body */}
+            <div className="overflow-y-auto p-6 md:p-8 flex-1">
+              {bookingStep === 1 && (
+                <div className="space-y-6">
+                  <div className="text-center">
+                    <h4 className="text-2xl font-bold text-gray-800 mb-2">Step 1: Choose Your Doctor</h4>
+                    <p className="text-gray-600">Select from our team of experienced mental health professionals</p>
                   </div>
-                </div>
-                
-                <div>
-                  <label className="block text-lg font-semibold text-gray-700 mb-3">📅 Available Dates:</label>
-                  <select
-                    value={selectedDate}
-                    onChange={(e) => setSelectedDate(e.target.value)}
-                    className="w-full p-4 border-2 border-gray-200 rounded-xl text-lg focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 transition-all duration-300"
-                  >
-                    <option value="">Select a date</option>
-                    {getAvailableDates().map(date => (
-                      <option key={date} value={date}>
-                        {new Date(date).toLocaleDateString('en-US', {
-                          weekday: 'long',
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric'
-                        })}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-lg font-semibold text-gray-700 mb-3">🕐 Available Times:</label>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    {timeSlots.map(time => (
-                      <button
-                        key={time}
-                        onClick={() => setSelectedTime(time)}
-                        className={`p-4 border-2 rounded-xl text-sm font-medium transition-all duration-300 transform hover:scale-105 ${
-                          selectedTime === time
-                            ? 'border-emerald-500 bg-gradient-to-r from-emerald-50 to-teal-50 text-emerald-700 shadow-lg'
+                  <div className="grid gap-4">
+                    {psychiatrists.map(psych => (
+                      <div
+                        key={psych.id}
+                        className={`p-6 border-2 rounded-2xl cursor-pointer transition-all duration-300 transform hover:scale-105 ${
+                          selectedPsychiatrist?.id === psych.id
+                            ? 'border-emerald-500 bg-gradient-to-r from-emerald-50 to-teal-50 shadow-lg'
                             : 'border-gray-200 hover:border-emerald-300 hover:shadow-md bg-white'
                         }`}
+                        onClick={() => setSelectedPsychiatrist(psych)}
                       >
-                        {time}
-                      </button>
+                        <div className="flex justify-between items-start">
+                          <div className="flex-1">
+                            <div className="flex items-center space-x-3 mb-2">
+                              <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full flex items-center justify-center">
+                                <span className="text-white font-bold text-lg">👩‍⚕️</span>
+                              </div>
+                              <div>
+                                <h5 className="font-bold text-lg text-gray-800">{psych.name}</h5>
+                                <p className="text-emerald-600 font-medium">{psych.specialty}</p>
+                              </div>
+                            </div>
+                            <p className="text-sm text-gray-600 ml-12">{psych.experience} of experience</p>
+                          </div>
+                          <div className="text-right">
+                            <div className="flex items-center justify-center space-x-1 mb-2">
+                              <span className="text-yellow-500 text-xl">★</span>
+                              <span className="font-bold text-lg">{psych.rating}</span>
+                            </div>
+                            <div className="text-xs text-gray-500">Rating</div>
+                          </div>
+                        </div>
+                      </div>
                     ))}
                   </div>
-                </div>
-
-                <div>
-                  <label className="block text-lg font-semibold text-gray-700 mb-3">📝 Notes (optional):</label>
-                  <textarea
-                    value={notes}
-                    onChange={(e) => setNotes(e.target.value)}
-                    rows={3}
-                    className="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 transition-all duration-300"
-                    placeholder="Add anything you'd like your doctor to know in advance"
-                  />
-                </div>
-
-                <div className="flex gap-4">
                   <button
-                    onClick={() => setBookingStep(1)}
-                    className="flex-1 px-6 py-4 bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105"
+                    onClick={() => setBookingStep(2)}
+                    disabled={!selectedPsychiatrist}
+                    className="w-full px-6 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:transform-none disabled:hover:shadow-lg"
                   >
-                    ← Back
-                  </button>
-                  <button
-                    onClick={handleBooking}
-                    disabled={!selectedDate || !selectedTime}
-                    className="flex-1 px-6 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:transform-none disabled:hover:shadow-lg"
-                  >
-                    ✓ Confirm Appointment
+                    Next: Select Date & Time →
                   </button>
                 </div>
-              </div>
-            )}
+              )}
+
+              {bookingStep === 2 && (
+                <div className="space-y-6">
+                  <div className="text-center">
+                    <h4 className="text-2xl font-bold text-gray-800 mb-2">Step 2: Select Date & Time</h4>
+                    <p className="text-gray-600">Choose your preferred appointment slot</p>
+                  </div>
+                  <div>
+                    <label className="block text-lg font-semibold text-gray-700 mb-3">🖥️ Session Mode:</label>
+                    <div className="flex gap-3">
+                      <button
+                        type="button"
+                        onClick={() => setSessionMode('online')}
+                        className={`px-4 py-2 rounded-xl border-2 ${sessionMode==='online' ? 'border-emerald-500 bg-emerald-50 text-emerald-700' : 'border-gray-200'}`}
+                      >Online (Video)</button>
+                      <button
+                        type="button"
+                        onClick={() => setSessionMode('in_person')}
+                        className={`px-4 py-2 rounded-xl border-2 ${sessionMode==='in_person' ? 'border-emerald-500 bg-emerald-50 text-emerald-700' : 'border-gray-200'}`}
+                      >In-person</button>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <label className="block text-lg font-semibold text-gray-700 mb-3">📅 Available Dates:</label>
+                    <select
+                      value={selectedDate}
+                      onChange={(e) => setSelectedDate(e.target.value)}
+                      className="w-full p-4 border-2 border-gray-200 rounded-xl text-lg focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 transition-all duration-300"
+                    >
+                      <option value="">Select a date</option>
+                      {getAvailableDates().map(date => (
+                        <option key={date} value={date}>
+                          {new Date(date).toLocaleDateString('en-US', {
+                            weekday: 'long',
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                          })}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-lg font-semibold text-gray-700 mb-3">🕐 Available Times:</label>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      {timeSlots.map(time => (
+                        <button
+                          key={time}
+                          onClick={() => setSelectedTime(time)}
+                          className={`p-4 border-2 rounded-xl text-sm font-medium transition-all duration-300 transform hover:scale-105 ${
+                            selectedTime === time
+                              ? 'border-emerald-500 bg-gradient-to-r from-emerald-50 to-teal-50 text-emerald-700 shadow-lg'
+                              : 'border-gray-200 hover:border-emerald-300 hover:shadow-md bg-white'
+                          }`}
+                        >
+                          {time}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="block text-lg font-semibold text-gray-700 mb-3">📝 Notes (optional):</label>
+                    <textarea
+                      value={notes}
+                      onChange={(e) => setNotes(e.target.value)}
+                      rows={3}
+                      className="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 transition-all duration-300"
+                      placeholder="Add anything you'd like your doctor to know in advance"
+                    />
+                  </div>
+
+                  <div className="flex gap-4">
+                    <button
+                      onClick={() => setBookingStep(1)}
+                      className="flex-1 px-6 py-4 bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105"
+                    >
+                      ← Back
+                    </button>
+                    <button
+                      onClick={handleBooking}
+                      disabled={!selectedDate || !selectedTime}
+                      className="flex-1 px-6 py-4 bg-gradient-to-r from-emerald-50 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:transform-none disabled:hover:shadow-lg"
+                    >
+                      ✓ Confirm Appointment
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}

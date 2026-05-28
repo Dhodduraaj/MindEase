@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import FaceEmotionDetector from './FaceEmotionDetector'
 import { questionnaireApi } from '../lib/api'
 
 const questions = [
@@ -316,8 +315,14 @@ export default function MoodQuestionnaire({ onSubmit }) {
               <h4 className="font-semibold text-yellow-800">Consider Professional Help</h4>
               <p className="text-yellow-700">
                 Your responses suggest you might benefit from speaking with a mental health professional.
-                Consider reaching out to a therapist or counselor.
+                Consider reaching out to a therapist or counselor. If you're in crisis, please contact:
               </p>
+              <ul className="mt-2 space-y-1 text-yellow-800 text-sm">
+                <li><strong>Aasra:</strong> 9820466726 (24/7 Suicide Helpline)</li>
+                <li><strong>iCall:</strong> 9152987821 (Mental Health Support)</li>
+                <li><strong>Sneha (Chennai):</strong> 044-24640050 (24/7)</li>
+                <li><strong>Vandrevala Foundation:</strong> 9999661036</li>
+              </ul>
             </div>
           )}
 

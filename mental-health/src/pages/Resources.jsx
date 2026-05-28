@@ -1,122 +1,122 @@
 export default function Resources() {
   const videos = [
     {
-      id: 'dQw4w9WgXcQ',
-      title: '5-Minute Breathing Exercise',
-      description: 'Guided breathing for stress relief',
-      category: 'meditation'
-    },
-    {
       id: 'inpok4MKVLM',
-      title: 'Mindfulness Meditation',
-      description: '10-minute guided meditation',
+      title: '5-Minute Meditation You Can Do Anywhere',
+      description: 'A quick guided meditation by Goodful for stress relief',
       category: 'meditation'
     },
     {
-      id: 'ZToicYcHIOU',
-      title: 'Progressive Muscle Relaxation',
-      description: 'Body relaxation technique',
+      id: 'O-6f5wQXSu8',
+      title: '10-Minute Meditation For Anxiety',
+      description: 'Guided meditation to calm anxious thoughts by Goodful',
+      category: 'meditation'
+    },
+    {
+      id: 'aEqlQvczMJQ',
+      title: '10-Minute Meditation For Sleep',
+      description: 'Guided sleep meditation for deep rest by Goodful',
       category: 'relaxation'
     }
   ]
 
   const asmrVideos = [
     {
-      id: 'jfKfPfyJRdk',
-      title: 'ASMR Rain Sounds for Sleep',
-      description: 'Gentle rain sounds for deep relaxation and sleep',
-      duration: '10:00:00'
-    },
-    {
-      id: 'q76bMsUWw2c',
-      title: 'ASMR Ocean Waves',
-      description: 'Calming ocean waves for meditation and focus',
-      duration: '3:00:00'
-    },
-    {
-      id: 'u3dD9YgFzUI',
-      title: 'ASMR Whispered Affirmations',
-      description: 'Soft spoken positive affirmations for self-care',
-      duration: '45:00'
-    },
-    {
-      id: '1ZYbU82GVz4',
-      title: 'ASMR Gentle Hand Movements',
-      description: 'Soothing hand movements and soft sounds',
-      duration: '25:00'
-    },
-    {
-      id: 'rUxyKA_-grg',
-      title: 'ASMR Forest Ambience',
-      description: 'Peaceful forest sounds with birds and wind',
+      id: 'yIQd2Ya0Ziw',
+      title: 'Rainstorm Sounds for Relaxing & Sleep',
+      description: 'Gentle rainstorm sounds for deep relaxation by Calm',
       duration: '8:00:00'
     },
     {
-      id: '6N1I7LhX2eE',
-      title: 'ASMR White Noise',
-      description: 'Soft white noise for concentration and sleep',
-      duration: '11:00:00'
+      id: 'WHPEKLQID4U',
+      title: 'Ocean Waves Relaxation',
+      description: 'Soothing waves crashing on beach - white noise for sleep',
+      duration: '10:00:00'
+    },
+    {
+      id: 'f0tpROu3hr0',
+      title: 'Rain & Thunder Sounds for Sleeping',
+      description: 'Heavy rain with thunder - real rain and thunderstorm sounds',
+      duration: '10:00:00'
+    },
+    {
+      id: '1ZYbU82GVz4',
+      title: 'Relaxing Sleep Music & Meditation',
+      description: 'Peaceful melodies for stress relief and deep sleep',
+      duration: '3:00:00'
+    },
+    {
+      id: 'jfKfPfyJRdk',
+      title: 'Lofi Beats to Relax & Study To',
+      description: 'Chill lofi hip hop radio for focus and relaxation',
+      duration: 'Live'
+    },
+    {
+      id: 'rUxyKA_-grg',
+      title: 'Lofi Beats to Sleep & Chill To',
+      description: 'Calming lofi hip hop for winding down and sleeping',
+      duration: 'Live'
     }
   ]
 
   const relaxingVideos = [
     {
-      id: 'yIQd2Ya0Ziw',
-      title: 'Peaceful Piano Music',
-      description: 'Beautiful piano melodies for relaxation',
-      duration: '2:00:00'
-    },
-    {
-      id: 'UfcAVejslrU',
-      title: 'Nature Sounds & Soft Music',
-      description: 'Combined nature sounds with gentle music',
+      id: 'lE6RYpe9IT0',
+      title: 'Relaxing Music with Nature Sounds',
+      description: 'Waterfall HD with peaceful background music',
       duration: '3:00:00'
     },
     {
-      id: 'L_LUpnjgPso',
-      title: 'Meditation Music for Sleep',
-      description: 'Calming music designed for deep sleep',
-      duration: '8:00:00'
+      id: 'UfcAVejslrU',
+      title: 'Marconi Union - Weightless',
+      description: 'Scientifically designed to reduce anxiety and stress',
+      duration: '8:09'
     },
     {
-      id: '1o9BwRfHZ8g',
-      title: 'Flowing Water Meditation',
-      description: 'Stream and waterfall sounds for mindfulness',
-      duration: '1:00:00'
+      id: '2OEL4P1Rz04',
+      title: 'Ambient Relaxing Music for Stress Relief',
+      description: 'Soothing ambient music for meditation and deep sleep',
+      duration: '3:00:00'
     },
     {
-      id: '3NycM9lYdWU',
-      title: 'Gentle Guitar & Nature',
-      description: 'Soft guitar with natural soundscapes',
-      duration: '4:00:00'
+      id: 'hlWiI4xVXKY',
+      title: 'Sunny Mornings: Piano & Guitar Music',
+      description: 'Beautiful relaxing music with piano, guitar and bird sounds',
+      duration: '3:00:00'
     }
   ]
+
 
   const articles = [
     {
       title: 'Understanding Anxiety: A Complete Guide',
       description: 'Learn about anxiety disorders, symptoms, and coping strategies.',
-      link: 'https://www.helpguide.org/articles/anxiety/anxiety-disorders-and-anxiety-attacks.htm'
+      link: 'https://www.healthline.com/health/anxiety'
     },
     {
       title: 'Depression: Signs, Symptoms, and Treatment',
       description: 'Comprehensive information about depression and available treatments.',
-      link: 'https://www.nimh.nih.gov/health/topics/depression'
+      link: 'https://www.who.int/news-room/fact-sheets/detail/depression'
     },
     {
       title: 'Building Resilience: How to Bounce Back',
       description: 'Strategies for developing mental resilience and emotional strength.',
-      link: 'https://www.apa.org/topics/resilience'
+      link: 'https://www.verywellmind.com/what-is-resilience-2795099'
     },
     {
-      title: 'Mindfulness and Mental Health',
-      description: 'The benefits of mindfulness practice for mental wellbeing.',
-      link: 'https://www.mindful.org/mindfulness-mental-health/'
+      title: 'Mindfulness and Mental Health in India',
+      description: 'The benefits of mindfulness and yoga practice for mental wellbeing.',
+      link: 'https://www.arthakranti.org/'
     },
     {
       title: 'Sleep and Mental Health',
       description: 'The connection between sleep quality and mental health.',
       link: 'https://www.sleepfoundation.org/mental-health'
+    },
+    {
+      title: 'Mental Health in Tamil Nadu',
+      description: 'Resources and information about mental health services in Tamil Nadu.',
+      link: 'https://tn.gov.in/'
     }
   ]
 
@@ -143,28 +143,31 @@ export default function Resources() {
           <div className="w-10 h-10 bg-gradient-to-br from-red-500 to-orange-600 rounded-xl flex items-center justify-center">
             <span className="text-white text-lg">🚨</span>
           </div>
-          <h3 className="text-xl font-bold text-red-800">Crisis Support</h3>
+          <h3 className="text-xl font-bold text-red-800">Crisis Support - India</h3>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white/50 p-4 rounded-lg">
             <h4 className="font-semibold text-red-700 mb-3 flex items-center space-x-2">
               <span>📞</span>
-              <span>Emergency Hotlines</span>
+              <span>Emergency Helplines (India)</span>
             </h4>
             <ul className="space-y-2">
-              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="https://988lifeline.org" target="_blank">988 Suicide & Crisis Lifeline (US)</a></li>
-              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="https://www.samaritans.org" target="_blank">Samaritans (UK & ROI)</a></li>
-              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="https://www.crisistextline.org" target="_blank">Crisis Text Line</a></li>
+              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="https://www.aasra.info" target="_blank">Aasra: 9820466726 (24/7 Suicide Helpline)</a></li>
+              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="https://www.icallhelpline.org" target="_blank">iCall: 9152987821 (Mental Health Support)</a></li>
+              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="tel:9999661036">Vandrevala Foundation: 9999661036</a></li>
+              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="tel:104">Emergency Medical: 104 (Ambulance)</a></li>
             </ul>
           </div>
           <div className="bg-white/50 p-4 rounded-lg">
             <h4 className="font-semibold text-red-700 mb-3 flex items-center space-x-2">
               <span>🌍</span>
-              <span>International Resources</span>
+              <span>Tamil Nadu Resources</span>
             </h4>
             <ul className="space-y-2">
-              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="https://www.befrienders.org" target="_blank">Befrienders Worldwide</a></li>
-              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="https://www.iasp.info/resources/Crisis_Centres/" target="_blank">IASP Crisis Centres</a></li>
+              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="tel:04424640050">Sneha Suicide Prevention Helpline: 044-24640050 (24/7)</a></li>
+              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="tel:9445241489">Tamil Nadu Mental Health Helpline: 9445241489</a></li>
+              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="https://www.befrienders.org" target="_blank">Befrienders India</a></li>
+              <li><a className="text-blue-700 hover:text-blue-800 underline transition-colors" href="tel:112">Police Emergency: 112</a></li>
             </ul>
           </div>
         </div>
@@ -319,65 +322,239 @@ export default function Resources() {
         </div>
       </div>
 
-      {/* Mental Health Articles */}
-      <div className="bg-white rounded shadow p-4">
-        <h3 className="text-lg font-semibold mb-4">📚 Mental Health Articles</h3>
-        <div className="space-y-3">
+      {/* Mental Health Articles & Guides */}
+      <div className="card p-8 bg-white">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center float-animation">
+            <span className="text-white text-lg">📚</span>
+          </div>
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            Mental Health Articles & Guides
+          </h3>
+        </div>
+        <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+          Deepen your understanding of mental wellbeing with our collection of verified, expert-written guides.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {articles.map((article, index) => (
-            <div key={index} className="border-l-4 border-blue-500 pl-4 py-2">
-              <h4 className="font-medium text-blue-700 hover:text-blue-800">
-                <a href={article.link} target="_blank" rel="noopener noreferrer">
+            <div 
+              key={index} 
+              className="group bg-gradient-to-br from-white to-gray-50/50 border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-indigo-100 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+            >
+              <div>
+                <span className="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-full mb-4">
+                  Article
+                </span>
+                <h4 className="font-bold text-gray-800 mb-2 group-hover:text-indigo-600 transition-colors">
                   {article.title}
-                </a>
-              </h4>
-              <p className="text-sm text-gray-600 mt-1">{article.description}</p>
+                </h4>
+                <p className="text-sm text-gray-600 leading-relaxed mb-6">
+                  {article.description}
+                </p>
+              </div>
+              <a 
+                href={article.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 text-indigo-600 hover:text-indigo-800 font-semibold text-sm transition-colors mt-auto"
+              >
+                <span>Read Article</span>
+                <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+              </a>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Support Groups */}
-      <div className="bg-white rounded shadow p-4">
-        <h3 className="text-lg font-semibold mb-4">👥 Communities & Support Groups</h3>
-        <div className="grid md:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-medium mb-2">Online Communities</h4>
-            <ul className="space-y-1 text-sm">
-              <li><a className="text-blue-700 underline" href="https://www.reddit.com/r/mentalhealth/" target="_blank">Reddit: r/mentalhealth</a></li>
-              <li><a className="text-blue-700 underline" href="https://www.reddit.com/r/Anxiety/" target="_blank">Reddit: r/Anxiety</a></li>
-              <li><a className="text-blue-700 underline" href="https://www.reddit.com/r/depression/" target="_blank">Reddit: r/depression</a></li>
+      {/* Support Groups & Communities */}
+      <div className="card p-8 bg-white">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center float-animation">
+            <span className="text-white text-lg">👥</span>
+          </div>
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            Communities & Support Groups
+          </h3>
+        </div>
+        <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+          Connect with others who understand. Join supportive communities and forums to share your journey.
+        </p>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-gradient-to-br from-gray-50 to-blue-50/30 p-6 rounded-2xl border border-gray-100">
+            <h4 className="font-bold text-gray-800 mb-4 flex items-center space-x-2 text-lg">
+              <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+              <span>Online Communities</span>
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <a 
+                  className="group flex items-center space-x-2 text-gray-700 hover:text-blue-600 font-medium transition-colors" 
+                  href="https://www.reddit.com/r/mentalhealth/" 
+                  target="_blank"
+                >
+                  <span className="text-gray-400 group-hover:text-blue-500 transition-colors">🔗</span>
+                  <span className="hover:underline">Reddit: r/mentalhealth</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  className="group flex items-center space-x-2 text-gray-700 hover:text-blue-600 font-medium transition-colors" 
+                  href="https://www.reddit.com/r/Anxiety/" 
+                  target="_blank"
+                >
+                  <span className="text-gray-400 group-hover:text-blue-500 transition-colors">🔗</span>
+                  <span className="hover:underline">Reddit: r/Anxiety</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  className="group flex items-center space-x-2 text-gray-700 hover:text-blue-600 font-medium transition-colors" 
+                  href="https://www.reddit.com/r/depression/" 
+                  target="_blank"
+                >
+                  <span className="text-gray-400 group-hover:text-blue-500 transition-colors">🔗</span>
+                  <span className="hover:underline">Reddit: r/depression</span>
+                </a>
+              </li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-medium mb-2">Local Support</h4>
-            <ul className="space-y-1 text-sm">
-              <li><a className="text-blue-700 underline" href="https://www.meetup.com/topics/mental-health/" target="_blank">Meetup: Local Support Groups</a></li>
-              <li><a className="text-blue-700 underline" href="https://www.nami.org/Support-Education" target="_blank">NAMI Support Groups</a></li>
-              <li><a className="text-blue-700 underline" href="https://www.mentalhealth.gov/get-help/immediate-help" target="_blank">Mental Health.gov Resources</a></li>
+          <div className="bg-gradient-to-br from-gray-50 to-indigo-50/30 p-6 rounded-2xl border border-gray-100">
+            <h4 className="font-bold text-gray-800 mb-4 flex items-center space-x-2 text-lg">
+              <span className="w-2 h-2 bg-indigo-500 rounded-full"></span>
+              <span>Local Support (India)</span>
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <a 
+                  className="group flex items-center space-x-2 text-gray-700 hover:text-indigo-600 font-medium transition-colors" 
+                  href="https://www.meetup.com/topics/mental-health/" 
+                  target="_blank"
+                >
+                  <span className="text-gray-400 group-hover:text-indigo-500 transition-colors">🔗</span>
+                  <span className="hover:underline">Meetup: Local Support Groups</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  className="group flex items-center space-x-2 text-gray-700 hover:text-indigo-600 font-medium transition-colors" 
+                  href="https://nimhans.ac.in/" 
+                  target="_blank"
+                >
+                  <span className="text-gray-400 group-hover:text-indigo-500 transition-colors">🔗</span>
+                  <span className="hover:underline">NIMHANS (Bangalore)</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  className="group flex items-center space-x-2 text-gray-700 hover:text-indigo-600 font-medium transition-colors" 
+                  href="https://www.thelivelovelaughfoundation.org/" 
+                  target="_blank"
+                >
+                  <span className="text-gray-400 group-hover:text-indigo-500 transition-colors">🔗</span>
+                  <span className="hover:underline">The Live Love Laugh Foundation</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  className="group flex items-center space-x-2 text-gray-700 hover:text-indigo-600 font-medium transition-colors" 
+                  href="https://www.icallhelpline.org/" 
+                  target="_blank"
+                >
+                  <span className="text-gray-400 group-hover:text-indigo-500 transition-colors">🔗</span>
+                  <span className="hover:underline">iCall Helpline & Resources</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Self-Help Tools */}
-      <div className="bg-white rounded shadow p-4">
-        <h3 className="text-lg font-semibold mb-4">🛠️ Self-Help Tools</h3>
-        <div className="grid md:grid-cols-2 gap-4">
-          <div>
-            <h4 className="font-medium mb-2">Mobile Apps</h4>
-            <ul className="space-y-1 text-sm">
-              <li>• Headspace (Meditation & Mindfulness)</li>
-              <li>• Calm (Sleep & Meditation)</li>
-              <li>• Moodpath (Mood Tracking)</li>
-              <li>• Sanvello (Anxiety & Depression)</li>
+      {/* Self-Help Tools & Apps */}
+      <div className="card p-8 bg-white">
+        <div className="flex items-center space-x-3 mb-6">
+          <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-emerald-600 rounded-xl flex items-center justify-center float-animation">
+            <span className="text-white text-lg">🛠️</span>
+          </div>
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
+            Self-Help Tools & Apps
+          </h3>
+        </div>
+        <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+          Explore mobile apps and web platforms dedicated to self-paced mental wellness and tracking.
+        </p>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-gradient-to-br from-gray-50 to-teal-50/30 p-6 rounded-2xl border border-gray-100">
+            <h4 className="font-bold text-gray-800 mb-4 flex items-center space-x-2 text-lg">
+              <span className="w-2 h-2 bg-teal-500 rounded-full"></span>
+              <span>Recommended Mobile Apps</span>
+            </h4>
+            <ul className="space-y-3">
+              <li className="flex items-start space-x-2">
+                <span className="text-teal-500 mt-1">✓</span>
+                <div>
+                  <strong className="text-gray-700">Headspace</strong>
+                  <p className="text-xs text-gray-500">Popular app for guided meditation, mindfulness, and sleep.</p>
+                </div>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="text-teal-500 mt-1">✓</span>
+                <div>
+                  <strong className="text-gray-700">Calm</strong>
+                  <p className="text-xs text-gray-500">Known for ambient music, soundscapes, sleep stories, and breathing exercise tools.</p>
+                </div>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="text-teal-500 mt-1">✓</span>
+                <div>
+                  <strong className="text-gray-700">Moodpath</strong>
+                  <p className="text-xs text-gray-500">Interactive tracker that periodically assesses your mood and compiles reports.</p>
+                </div>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="text-teal-500 mt-1">✓</span>
+                <div>
+                  <strong className="text-gray-700">Sanvello</strong>
+                  <p className="text-xs text-gray-500">CBT-grounded app to manage stress, anxiety, and depression.</p>
+                </div>
+              </li>
             </ul>
           </div>
-          <div>
-            <h4 className="font-medium mb-2">Websites</h4>
-            <ul className="space-y-1 text-sm">
-              <li><a className="text-blue-700 underline" href="https://www.mindfulness.org" target="_blank">Mindfulness.org</a></li>
-              <li><a className="text-blue-700 underline" href="https://www.psychologytoday.com" target="_blank">Psychology Today</a></li>
-              <li><a className="text-blue-700 underline" href="https://www.verywellmind.com" target="_blank">Verywell Mind</a></li>
+          <div className="bg-gradient-to-br from-gray-50 to-emerald-50/30 p-6 rounded-2xl border border-gray-100">
+            <h4 className="font-bold text-gray-800 mb-4 flex items-center space-x-2 text-lg">
+              <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
+              <span>Wellness Websites</span>
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <a 
+                  className="group flex items-center space-x-2 text-gray-700 hover:text-emerald-600 font-medium transition-colors" 
+                  href="https://www.mindful.org" 
+                  target="_blank"
+                >
+                  <span className="text-gray-400 group-hover:text-emerald-500 transition-colors">🔗</span>
+                  <span className="hover:underline">Mindful.org (Mindfulness Guides)</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  className="group flex items-center space-x-2 text-gray-700 hover:text-emerald-600 font-medium transition-colors" 
+                  href="https://www.psychologytoday.com" 
+                  target="_blank"
+                >
+                  <span className="text-gray-400 group-hover:text-emerald-500 transition-colors">🔗</span>
+                  <span className="hover:underline">Psychology Today</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  className="group flex items-center space-x-2 text-gray-700 hover:text-emerald-600 font-medium transition-colors" 
+                  href="https://www.verywellmind.com" 
+                  target="_blank"
+                >
+                  <span className="text-gray-400 group-hover:text-emerald-500 transition-colors">🔗</span>
+                  <span className="hover:underline">Verywell Mind</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

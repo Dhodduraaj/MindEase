@@ -168,8 +168,9 @@ export default function Therapy() {
             <h4 className="font-semibold text-blue-800 mb-2">Important Notice</h4>
             <p className="text-blue-700 leading-relaxed">
               This AI assistant is not a substitute for professional mental health care. 
-              If you're in crisis or having thoughts of self-harm, please contact your local emergency services 
-              or a mental health professional immediately.
+              If you're in crisis or having thoughts of self-harm, please contact a crisis helpline 
+              immediately: <strong>Aasra: 9820466726</strong>, <strong>iCall: 9152987821</strong>, 
+              or <strong>Sneha (Chennai): 044-24640050</strong> (24/7).
             </p>
           </div>
         </div>

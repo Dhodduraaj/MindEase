@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import MoodQuestionnaire from '../components/MoodQuestionnaire'
-import FaceEmotionDetector from '../components/FaceEmotionDetector'
-import FaceEmotionDetectorSimple from '../components/FaceEmotionDetectorSimple'
 
 export default function Homepage() {
   const navigate = useNavigate()
@@ -101,27 +99,35 @@ export default function Homepage() {
 
       {/* Enhanced Questionnaire Modal */}
       {showQuestionnaire && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fadeIn">
-          <div className="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl transform animate-slideUp">
-            <div className="p-8">
-              <div className="flex justify-between items-center mb-6">
-                <div>
-                  <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    Mood Assessment
-                  </h2>
-                  <p className="text-gray-600 mt-2">Take a moment to reflect on your current state</p>
-                </div>
-                <button
-                  onClick={() => setShowQuestionnaire(false)}
-                  className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center text-gray-500 hover:text-gray-700 transition-all duration-300"
-                >
-                  <span className="text-xl">×</span>
-                </button>
+        <div 
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4 md:p-6 animate-fadeIn"
+          onClick={() => setShowQuestionnaire(false)}
+        >
+          <div 
+            className="bg-white rounded-2xl w-full max-w-4xl max-h-[85vh] md:max-h-[90vh] overflow-hidden shadow-2xl flex flex-col transform animate-slideUp"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="flex justify-between items-center p-6 border-b border-gray-100 flex-shrink-0">
+              <div>
+                <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  Mood Assessment
+                </h2>
+                <p className="text-gray-600 mt-2">Take a moment to reflect on your current state</p>
               </div>
+              <button
+                onClick={() => setShowQuestionnaire(false)}
+                className="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center text-gray-500 hover:text-gray-700 transition-all duration-300"
+              >
+                <span className="text-xl">×</span>
+              </button>
+            </div>
+
+            {/* Modal Body */}
+            <div className="overflow-y-auto p-6 md:p-8 flex-1">
               <MoodQuestionnaire 
                 onSubmit={(report) => {
                   console.log('Mood report:', report)
-                  // Keep modal open so the in-component report is visible
                 }} 
               />
             </div>

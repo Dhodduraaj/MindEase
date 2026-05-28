@@ -180,8 +180,8 @@ function Layout({ children }) {
       </header>
 
       {/* Main content with smooth transitions */}
-      <main className="pt-20 min-h-screen">
-        <div className="max-w-6xl mx-auto px-4 py-8">
+      <main className="pt-20 min-h-screen w-full overflow-x-hidden">
+        <div className="w-full px-4 md:px-8 py-8">
           <div className="page-enter-active">
             {children}
           </div>

@@ -1,0 +1,16 @@
+[build]
+command = "cd mental-health && npm run build"
+publish = "mental-health/dist"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[env]
+  [env.production]
+    [env.production.vars]
+    VITE_API_BASE = "https://your-production-api.com/api"
+
+[functions]
+directory = "functions"

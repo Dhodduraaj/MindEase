@@ -80,11 +80,11 @@ export default function Locator() {
         },
         (error) => {
           console.error('Geolocation error:', error)
-          // Default to a location (e.g., New York)
-          const defaultLocation = { lat: 40.7128, lng: -74.0060 }
+          // Default to Chennai, Tamil Nadu, India
+          const defaultLocation = { lat: 13.0827, lng: 80.2707 }
           setUserLocation(defaultLocation)
           initializeMap(defaultLocation)
-          setError('Location access denied. Showing default location.')
+          setError('Location access denied. Showing default location (Chennai).')
         }
       )
     } else {
@@ -225,7 +225,7 @@ export default function Locator() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto space-y-6">
+    <div className="w-full space-y-6">
       {/* Header */}
       <div className="text-center">
         <div className="flex items-center justify-center space-x-3 mb-4">

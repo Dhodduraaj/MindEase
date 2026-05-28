@@ -40,7 +40,7 @@ export default function TherapyNew() {
       console.error('Chat error:', error)
       setMessages((m) => [...m, { 
         role: 'assistant', 
-        content: 'I apologize, but I\'m having trouble connecting right now. Please try again in a moment. If you\'re in crisis, please contact a crisis helpline immediately: 988 (US) or your local emergency services.' 
+        content: 'I apologize, but I\'m having trouble connecting right now. Please try again in a moment. If you\'re in crisis, please contact a crisis helpline immediately: Aasra (9820466726), iCall (9152987821), or your local emergency services.' 
       }])
     } finally { 
       setLoading(false) 
@@ -55,7 +55,7 @@ export default function TherapyNew() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto space-y-6">
+    <div className="w-full space-y-6">
       {/* Header */}
       <div className="text-center">
         <div className="flex items-center justify-center space-x-3 mb-4">
@@ -213,8 +213,8 @@ export default function TherapyNew() {
             <h4 className="font-semibold text-yellow-800 mb-2">Important Notice</h4>
             <p className="text-yellow-700 leading-relaxed text-sm">
               This AI assistant provides supportive conversation but is not a substitute for professional mental health care. 
-              If you're in crisis or having thoughts of self-harm, please contact emergency services (911) or a crisis helpline 
-              immediately: <strong>988 Suicide & Crisis Lifeline</strong> (US) or <strong>Crisis Text Line: Text "HELLO" to 741741</strong>.
+              If you're in crisis or having thoughts of self-harm, please contact emergency services or a crisis helpline 
+              immediately: <strong>Aasra: 9820466726</strong> or <strong>iCall: 9152987821</strong> (India).
             </p>
           </div>
         </div>

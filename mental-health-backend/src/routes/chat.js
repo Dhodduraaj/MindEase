@@ -56,7 +56,7 @@ router.post('/', async (req, res) => {
     let fallbackMessage = "I'm here to support you. I'm having trouble connecting right now, but I want you to know that your feelings are valid and important. Can you tell me more about what's on your mind?"
     
     if (e.message?.includes('quota') || e.message?.includes('429')) {
-      fallbackMessage = "I'm experiencing high demand right now. While I work on that, please know that your wellbeing matters. If you're in crisis, please reach out to a crisis helpline: 988 (US) or your local emergency services."
+      fallbackMessage = "I'm experiencing high demand right now. While I work on that, please know that your wellbeing matters. If you're in crisis, please reach out to a crisis helpline: Aasra (9820466726), iCall (9152987821), or your local emergency services."
     }
     
     res.json({ reply: fallbackMessage })
