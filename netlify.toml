@@ -1,6 +1,7 @@
 [build]
-command = "cd mental-health && npm run build"
-publish = "mental-health/dist"
+base = "mental-health"
+command = "npm install && npm run build"
+publish = "dist"
 
 [[redirects]]
 from = "/*"
