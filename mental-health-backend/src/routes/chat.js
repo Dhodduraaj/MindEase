@@ -17,7 +17,7 @@ router.post('/', async (req, res) => {
   const userMessage = parsed.data.message
 
   try {
-    const apiKey = process.env.GEMINI_API_KEY
+    const apiKey = process.env.GOOGLE_GEMINI_API || process.env.GEMINI_API_KEY
     
     if (!apiKey) {
       console.error('GEMINI_API_KEY is not set')

@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
   if (!parsed.success) return res.status(400).json({ message: 'Invalid input' })
 
   try {
-    const apiKey = process.env.GEMINI_API_KEY
+    const apiKey = process.env.GOOGLE_GEMINI_API || process.env.GEMINI_API_KEY
     if (!apiKey) {
       return res.status(500).json({ message: 'API key not configured' })
     }

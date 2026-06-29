@@ -13,7 +13,7 @@ api.interceptors.request.use((config) => {
 
 // Initialize Gemini client directly on the frontend
 const getGeminiClient = () => {
-  const apiKey = import.meta.env.VITE_GEMINI_API_KEY || 'AIzaSyDBF7eW-9xRzm8MHX6rx8ZLHeC9O7WFzlk'
+  const apiKey = import.meta.env.VITE_GOOGLE_GEMINI_API || import.meta.env.VITE_GEMINI_API_KEY
   return new GoogleGenerativeAI(apiKey)
 }
 

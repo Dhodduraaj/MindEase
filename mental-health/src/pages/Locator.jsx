@@ -38,7 +38,7 @@ export default function Locator() {
 
         const script = document.createElement('script')
         const params = new URLSearchParams({
-          key: 'AIzaSyA-rmLl9FB6bQdB0XLtiAOuuoXf04YuFMY',
+          key: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
           libraries: 'places,geometry',
           v: 'weekly',
           loading: 'async',
@@ -137,7 +137,7 @@ export default function Locator() {
     markersRef.current = []
 
     const service = new window.google.maps.places.PlacesService(map)
-    
+
     const request = {
       location: userLocation,
       radius: 5000, // 5km radius
@@ -147,10 +147,10 @@ export default function Locator() {
 
     service.nearbySearch(request, (results, status) => {
       setLoading(false)
-      
+
       if (status === window.google.maps.places.PlacesServiceStatus.OK) {
         setPlaces(results.slice(0, 10)) // Limit to 10 results
-        
+
         // Add markers for each place
         results.slice(0, 10).forEach((place, index) => {
           const marker = new window.google.maps.Marker({
@@ -256,11 +256,10 @@ export default function Locator() {
               key={category.id}
               onClick={() => searchNearbyPlaces(category)}
               disabled={loading}
-              className={`p-4 rounded-xl border-2 transition-all duration-300 ${
-                selectedCategory === category.id
-                  ? 'border-green-500 bg-green-50 shadow-lg'
-                  : 'border-gray-200 hover:border-green-300 hover:shadow-md'
-              } ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+              className={`p-4 rounded-xl border-2 transition-all duration-300 ${selectedCategory === category.id
+                ? 'border-green-500 bg-green-50 shadow-lg'
+                : 'border-gray-200 hover:border-green-300 hover:shadow-md'
+                } ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
             >
               <div className="text-3xl mb-2">{category.icon}</div>
               <div className="text-sm font-medium text-gray-700">{category.name}</div>
@@ -273,8 +272,8 @@ export default function Locator() {
         {/* Map */}
         <div className="lg:col-span-2">
           <div className="card p-4">
-            <div 
-              ref={mapRef} 
+            <div
+              ref={mapRef}
               className="w-full h-[600px] rounded-lg"
               style={{ minHeight: '600px' }}
             />
@@ -295,7 +294,7 @@ export default function Locator() {
             <h3 className="text-xl font-semibold mb-4 sticky top-0 bg-white pb-2">
               {places.length > 0 ? `Found ${places.length} Places` : 'Select a category'}
             </h3>
-            
+
             {places.length === 0 && !loading && (
               <div className="text-center py-12">
                 <div className="text-6xl mb-4">🗺️</div>
@@ -305,7 +304,7 @@ export default function Locator() {
 
             <div className="space-y-3">
               {places.map((place, index) => (
-                <div 
+                <div
                   key={place.place_id}
                   className="p-4 bg-gradient-to-br from-gray-50 to-green-50 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300"
                 >
@@ -316,7 +315,7 @@ export default function Locator() {
                     <div className="flex-1 min-w-0">
                       <h4 className="font-semibold text-gray-800 mb-1">{place.name}</h4>
                       <p className="text-sm text-gray-600 mb-2">{place.vicinity}</p>
-                      
+
                       <div className="flex items-center space-x-3 text-sm mb-3">
                         {place.rating && (
                           <span className="text-yellow-600 font-medium">
@@ -336,11 +335,10 @@ export default function Locator() {
                           🧭 Directions
                         </button>
                         {place.opening_hours && (
-                          <div className={`px-3 py-2 rounded-lg text-sm font-medium ${
-                            place.opening_hours.open_now 
-                              ? 'bg-green-100 text-green-800' 
-                              : 'bg-red-100 text-red-800'
-                          }`}>
+                          <div className={`px-3 py-2 rounded-lg text-sm font-medium ${place.opening_hours.open_now
+                            ? 'bg-green-100 text-green-800'
+                            : 'bg-red-100 text-red-800'
+                            }`}>
                             {place.opening_hours.open_now ? '✓ Open' : '✗ Closed'}
                           </div>
                         )}
